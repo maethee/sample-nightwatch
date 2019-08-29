@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test": "./node_modules/.bin/nightwatch --config nightwatch.conf.js"
+  },
+  "dependencies": {
+    "chromedriver": "^76.0.1",
+    "nightwatch": "^1.2.1"
+  },
+  "devDependencies": {
+    "cucumber": "^5.1.0",
+    "geckodriver": "^1.16.2",
+    "selenium-server-standalone-jar": "^3.141.59"
+  }
+}
