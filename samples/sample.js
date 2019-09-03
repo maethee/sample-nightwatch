@@ -3,8 +3,8 @@ module.exports = {
       browser
         .url('https://www.renthub.in.th/dashboard/apartments')
         .waitForElementVisible('input[id=user_email]')
-        .setValue('input[id=user_email]', 'xxx')
-        .setValue('input[id=user_password]', 'xxx')
+        .setValue('input[id=user_email]', 'maethee.chakkuchantorn@gmail.com')
+        .setValue('input[id=user_password]', 'tmtcom123')
         .click('input[type=submit]')
         .useXpath() 
         .waitForElementVisible('//*[@id="dashboard-tab"]/li[1]/ul/li[2]/a')
@@ -17,6 +17,13 @@ module.exports = {
         .pause(1000)
         .waitForElementVisible('//*[@id="form-for-condo-listing"]/div[2]/ul/li[3]/div/div/div/div[2]/div/div')
         .click('//*[@id="form-for-condo-listing"]/div[2]/ul/li[3]/div/div/div/div[2]/div/div')
+        .setValue('//*[@id="form-for-condo-listing"]/div[2]/ul/li[4]/div/span[1]/div/div[1]/input', 'A1')
+        .click('//*[@id="form-for-condo-listing"]/div[2]/ul/li[4]/div/span[2]/div/div[1]')
+        .waitForElementVisible('//*[@id="form-for-condo-listing"]/div[2]/ul/li[4]/div/span[2]/div/div[2]/div')
+        .click('//*[@id="form-for-condo-listing"]/div[2]/ul/li[4]/div/span[2]/div/div[2]/div/div[2]')
+        .click('//*[@id="form-for-condo-listing"]/div[2]/ul/li[6]/div/span[4]/div/div[1]')
+        .waitForElementVisible('//*[@id="form-for-condo-listing"]/div[2]/ul/li[6]/div/span[4]/div/div[2]/div')
+        .click('//*[@id="form-for-condo-listing"]/div[2]/ul/li[6]/div/span[4]/div/div[2]/div/div[5]')
         .waitForElementVisible('input[id=user_email]')
         .end();
     }
