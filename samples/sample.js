@@ -24,7 +24,9 @@ module.exports = {
         .click('//*[@id="form-for-condo-listing"]/div[2]/ul/li[6]/div/span[4]/div/div[1]')
         .waitForElementVisible('//*[@id="form-for-condo-listing"]/div[2]/ul/li[6]/div/span[4]/div/div[2]/div')
         .click('//*[@id="form-for-condo-listing"]/div[2]/ul/li[6]/div/span[4]/div/div[2]/div/div[5]')
+        .setValue('//*[@id="picture_upload_section"]/div[3]/input', require('path').resolve(__dirname + '/images/sample-image.jpg')) // Works
         .waitForElementVisible('input[id=user_email]')
         .end();
+       
     }
   };
