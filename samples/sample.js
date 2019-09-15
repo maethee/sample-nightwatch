@@ -3,8 +3,8 @@ module.exports = {
       browser
         .url('https://www.renthub.in.th/dashboard/apartments')
         .waitForElementVisible('input[id=user_email]')
-        .setValue('input[id=user_email]', 'maethee.chakkuchantorn@gmail.com')
-        .setValue('input[id=user_password]', 'tmtcom123')
+        .setValue('input[id=user_email]', 'xxx')
+        .setValue('input[id=user_password]', 'xxx')
         .click('input[type=submit]')
         .useXpath() 
         .waitForElementVisible('//*[@id="dashboard-tab"]/li[1]/ul/li[2]/a')
